@@ -58,7 +58,7 @@ public class UserService {
 
         try{
             str = reader.readLine();
-        } catch(IOException e){}
+        } catch(IOException e){e.printStackTrace();}
 
         return str;
     }

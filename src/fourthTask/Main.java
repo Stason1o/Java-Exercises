@@ -1,13 +1,7 @@
 package fourthTask;
 
-import fourthTask.com.endava.complexfigures.EquilateralTriangle;
-import fourthTask.com.endava.complexfigures.IsoscelesTriangle;
-import fourthTask.com.endava.complexfigures.ResizableCircle;
+import fourthTask.com.endava.complexfigures.*;
 import fourthTask.com.endava.interfaceimpl.*;
-import fourthTask.com.endava.interfaceimpl.Circle;
-import fourthTask.com.endava.interfaceimpl.Figure;
-import fourthTask.com.endava.interfaceimpl.Square;
-import fourthTask.com.endava.interfaceimpl.Triangle;
 
 
 import java.util.ArrayList;
@@ -28,6 +22,7 @@ public class Main {
         list.add(new Rectangle(3, 5));
         list.add(new ResizableCircle(4));
         list.add(new Rhombus(3,4,5));
+
 
         for (Figure figure: list){
             System.out.println(figure);

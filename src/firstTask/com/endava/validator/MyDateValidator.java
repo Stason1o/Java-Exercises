@@ -64,7 +64,7 @@ public class MyDateValidator {
     }
 
     private static int inInt(){
-        return (Integer.valueOf(inString()).intValue());
+        return Integer.valueOf(inString()).intValue();
     }
 
     static String inString() {
@@ -74,7 +74,7 @@ public class MyDateValidator {
         do{
             try{
                 str = reader.readLine();
-            } catch(IOException e){}
+            } catch(IOException e){ e.printStackTrace();}
             if(str.matches("[1-9]([0-9])*([0-9])*([0-9])*")){
                 return str;
             } else System.out.println("Input is incorrect. Re-input");
