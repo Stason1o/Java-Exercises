@@ -80,16 +80,18 @@ public class User {
     }
 
     private void initializeUserFields(){
-            this.setName(UserService.setName());
-            this.setSurname(UserService.setSurname());
-            this.setMyDate(UserService.setDate());
-            this.setNationality(UserService.setNationality());
-            this.setAge((byte)(LocalDate.now().getYear() - myDate.getYear()));
-            this.setLocalDate(LocalDate.of(MyDateValidator.setYear(), MyDateValidator.setMonth(), MyDateValidator.setDay()));
+        this.setName(UserService.setName());
+        this.setSurname(UserService.setSurname());
+        this.setMyDate(UserService.setDate());
+        this.setNationality(UserService.setNationality());
+        this.setAge((byte)(LocalDate.now().getYear() - myDate.getYear()));
+        this.setLocalDate(LocalDate.of(MyDateValidator.setYear(), MyDateValidator.setMonth(), MyDateValidator.setDay()));
     }
 
     public static void main(String[] args) {
         User user = new User();
         user.printUserInformation();
+
+        //TODO: SDFJKBVJHEASDFBVIJSKB
     }
 }
